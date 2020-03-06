@@ -62,4 +62,12 @@ This application is developed under:
 grails create-app hello-vesta-questions
 ```
 
+for a more deployment friendly java run, use JVM options
+
+```bash
+java -jar -server -Xmx512M -Xms128M \
+          -Dfile.encoding=UTF-8 \
+          -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -XX:CICompilerCount=3 \
+          ./hello-vesta-questions-0.1.jar
+```
 
