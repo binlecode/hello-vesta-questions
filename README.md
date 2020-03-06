@@ -20,8 +20,6 @@ Basic domain models defined:
   this serves as a 'cache' table holding historically fetched questions that has been given to user, the timestamp in this table helps the deduping in the question fetching logic
   
 Main question fetching logic is in [DailyQuestionServide](./grails-app/services/vesta/DailyQuestionService.groovy) service class.  
- 
-
 
 ## how to run
 
@@ -37,6 +35,8 @@ java -jar ./hello-vesta-questions-0.1.jar
 
 Then go to [localhost:8080](http://localhost:8080) and you will see a basic homepage that contains a list of controllers.
 
+Web pages are used to represent question fetching and history list to illustrate the random and deduping logic.
+The question fetch page url is [localhost:8080/userQuestion/index](http://localhost:8080/userQuestion/index)
 
 ## environment
 
