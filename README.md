@@ -70,4 +70,3 @@ java -jar -server -Xmx512M -Xms128M \
           -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -XX:CICompilerCount=3 \
           ./hello-vesta-questions-0.1.jar
 ```
-
