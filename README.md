@@ -1,6 +1,21 @@
 
-## 
+## Hello-Vesta-Quesitons
 
+This is a little web app to exercise some basic random quesition fetching.
+
+Essentially:
+* one user can get up to 6 (reconfigurable) questions for a given day
+* one user can request questions multiple times for a given day
+* questions provided each time should not overlap with previously given questions for a given day
+* questions are related to user via user enrolled programs
+
+Basic domain models defined:
+* [User](./grails-app/domain/vesta/User.groovy)
+* [Program](./grails-app/domain/vesta/Program.groovy)
+* [UserProgram](./grails-app/domain/vesta/UserProgram.groovy)
+  users and programs have many to many relationship via this mapping table
+* [Question](./grails-app/domain/vesta/Question.groovy)
+  questions are grouped by programs
 
 
 ## how to run
