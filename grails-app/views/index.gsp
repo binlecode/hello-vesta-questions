@@ -63,13 +63,14 @@
     <section class="row colset-2-its">
         <h1>Six questions a day keeps doctor away</h1>
 
-        <p>
-            There will be six (fun) questions selected for you to answer.
-        </p>
+%{--        <p></p>--}%
 
         <div id="controllers" role="navigation">
-            <h2>Place-holder list</h2>
+            <h2>Simple rules</h2>
             <ul>
+                <li>There will be six (6) questions selected for you to answer.</li>
+                <li>They are randomly selected from your programs.</li>
+                <li>You can request quesitons multiple times aday.</li>
                 <g:each var="c" in="${[]}">
                     <li class="controller">
                         <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
