@@ -70,7 +70,7 @@
             <ul>
                 <li>There will be six (6) questions selected for you to answer.</li>
                 <li>They are randomly selected from your programs.</li>
-                <li>You can request quesitons multiple times aday.</li>
+                <li>You can request questions multiple times aday.</li>
                 <g:each var="c" in="${[]}">
                     <li class="controller">
                         <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>

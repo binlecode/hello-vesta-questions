@@ -28,6 +28,8 @@ class DailyQuestionService {
         List userProgramIds = UserProgram.findAllByUser(user)*.programId
         def questionCriteria = Question.where {
             program.id in userProgramIds
+            //todo: I know... this is bad, need some lazy loading to get associated programs name etc.
+            join 'program'
         }
         List<Question> questionCandidatesForToday = questionCriteria.list()
 //        Number questionCandidatesCountForToday = questionCriteria.count()

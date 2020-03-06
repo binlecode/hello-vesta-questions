@@ -2,8 +2,10 @@ package vesta
 
 class UserQuestionHistory {
 
+    /** when the question is provided to user */
     Date dateCreated
-//    Date lastUpdated
+    /** when the question is answered by user */
+    Date lastUpdated
 
     User user
     Question question

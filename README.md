@@ -37,6 +37,16 @@ Then go to [localhost:8080](http://localhost:8080) and you will see a basic home
 
 Web pages are used to represent question fetching and history list to illustrate the random and deduping logic.
 The question fetch page url is [localhost:8080/userQuestion/index](http://localhost:8080/userQuestion/index)
+See screenshot below:
+![demo-front-page-controller-link](./doc/demo-front-page-controller-link.png)
+
+## todos
+
+- get question answering transaction implemented so answer timestamp can be recorded in history table
+- ugly layout needs serious time...
+- user login support (with security) to replace current hard-coded user setup
+- a better text form for program and question CRUDs
+
 
 ## environment
 
