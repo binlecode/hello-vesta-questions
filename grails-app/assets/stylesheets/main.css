@@ -581,8 +581,8 @@ a.skip {
 }
 
 .grails-logo-container {
-    background: #7c7c7c no-repeat 50% 30%;
-    margin-bottom: 20px;
+    /*background: #7c7c7c no-repeat 50% 30%;*/
+    /*margin-bottom: 20px;*/
     color: white;
     height:300px;
     text-align:center;

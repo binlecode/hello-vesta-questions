@@ -2,10 +2,20 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Welcome to Simple Random Questions</title>
 </head>
 <body>
 <content tag="nav">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Controller links <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+                <li class="dropdown-item">
+                    <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
+                </li>
+            </g:each>
+        </ul>
+    </li>
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -27,10 +37,10 @@
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
+            <li class="dropdown-item"><a href="#"># of Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
+            <li class="dropdown-item"><a href="#"># of Domains: ${grailsApplication.domainClasses.size()}</a></li>
+            <li class="dropdown-item"><a href="#"># of Services: ${grailsApplication.serviceClasses.size()}</a></li>
+            <li class="dropdown-item"><a href="#"># of Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
         </ul>
     </li>
     <li class="dropdown">
@@ -45,25 +55,22 @@
 
 <div class="svg" role="presentation">
     <div class="grails-logo-container">
-        <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
+        <asset:image src="all-you-have-to-do-is-ask.jpg" class="grails-logo" style="height:100%"/>
     </div>
 </div>
 
 <div id="content" role="main">
     <section class="row colset-2-its">
-        <h1>Welcome to Grails</h1>
+        <h1>Six questions a day keeps doctor away</h1>
 
         <p>
-            Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display
-            whatever content you may choose. Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
+            There will be six (fun) questions selected for you to answer.
         </p>
 
         <div id="controllers" role="navigation">
-            <h2>Available Controllers:</h2>
+            <h2>Place-holder list</h2>
             <ul>
-                <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+                <g:each var="c" in="${[]}">
                     <li class="controller">
                         <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
                     </li>
