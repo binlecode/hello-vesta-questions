@@ -16,6 +16,11 @@ Basic domain models defined:
   users and programs have many to many relationship via this mapping table
 * [Question](./grails-app/domain/vesta/Question.groovy)
   questions are grouped by programs
+* [UserQuestionHistory](./grails-app/domain/vesta/UserQuestionHistory.groovy)
+  this serves as a 'cache' table holding historically fetched questions that has been given to user, the timestamp in this table helps the deduping in the question fetching logic
+  
+Main question fetching logic is in [DailyQuestionServide](./grails-app/services/vesta/DailyQuestionService.groovy) service class.  
+ 
 
 
 ## how to run

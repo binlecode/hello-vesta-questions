@@ -8,7 +8,6 @@ import grails.gorm.transactions.Transactional
  * - one user can get up to 6 questions for a given day
  * - one user can request questions multiple times for a given day
  * - questions provided each time should not overlap with previously given questions
- * -
  */
 @Transactional
 class DailyQuestionService {
@@ -22,8 +21,6 @@ class DailyQuestionService {
      *
      * also, it is reasonable (or not?) to assume there's a large pool of questions per program, then it is
      * preferred to fetch questions with historical question collission avoidance at data side
-     *
-     *
      */
     def getDailyQuestions(User user) {
 
